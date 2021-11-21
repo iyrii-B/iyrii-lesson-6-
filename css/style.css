@@ -1,7 +1,26 @@
-/* 
-&display=swap
-&subset=cyrillic-ext 
-*/
+/* &display=swap&subset=cyrillic-ext */
+
+@import url("https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900&display=swap&subset=cyrillic-ext");
+
+@font-face {
+	font-family: 'Montserrat Alternates';
+	src: url('../fonts/MontserratAlternates-SemiBold.woff2') format('woff2'), 
+	url('../fonts/MontserratAlternates-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+ }
+ 
+ @font-face {
+	font-family: 'Montserrat Alternates';
+	src: url('../fonts/MontserratAlternates-Bold.woff2') format('woff2'),
+	url('../fonts/MontserratAlternates-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+ }
+
+
 
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
@@ -42,192 +61,554 @@ html {
 	font-size: 16px; /* по умолчанию */
 }
 body {
+	font-family: 'Montserrat Alternates';
+
 	line-height: 1;
 }
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
-	padding: 20px;
 }
-/* ------------------------------ */
-.block {
-	background-color: rgba(119, 96, 141, 1);
+/* ----------------------------- */
+
+.wrapper{
+	background-color: rgba(45, 167, 150, 0.315);
+	font-weight: 700;
+	font-size: 20px;
+}
+
+h2{
+	font-family: "Outfit";
+	justify-content: center;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 700;
+	margin: 20px;
+	padding: 5px;
+	border-bottom: 5px double black;
+	color: rgb(76, 105, 158);
+}
+h3{
+	font-family: "Outfit";
+	justify-content: center;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	color: rgb(76, 105, 158);
+	padding: 5px;
+}
+
+.header {
+ 	background: rgb(200, 96, 35);
+	font-size: 25px;
+	box-shadow: inset  0 0 15px 5px black, 0px 0px 20px 10px rgb(73, 134, 15);
+	transform: translate(32px);	
+	padding: 15px;
+	width: 95%;
+}
+
+.title {
+	text-align: center;
+	font-size: 35px;
+	text-transform: capitalize;
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+	padding: 5px;color: white;
+}
+.nav-body {
+	text-align: center;
+	padding: 0px 0px 20px 0px;
+	border-bottom: 2px solid black;
+}
+
+.text{
+	display: inline-block;
+	background-color: #c7f7a7;
+	width: 20%;
+}
+.Border{
+	border: 10px solid rgb(69, 82, 51);
+}
+.Border_1{
+	border: 10px dashed rgb(60, 71, 42);
+}
+.Border_2{
+	border: 10px dotted rgb(56, 68, 38);
+}
+.Border_3{
+	border: 10px double rgb(42, 49, 31);
+}
+/*                   snow man             */
+.Block_oll{
+	background-image: url(/img/snowing.jpg.png); 
+	width: 900px;
+	height: 600px; 
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.nav-body2{
+	text-align: center;
+	padding: 0px 0px 20px 0px;
+	border-bottom: none;
+}
+/*          border hover                */
+.title2 {
+	text-align: center;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+	padding: 5px; 
+}
+.title2:hover{
+	color: rgb(0, 0, 0);
+	text-decoration: underline;
+}
+.nav-body {
+	text-align: center;
+	padding: 0px 0px 20px 0px;
+	border-bottom: 2px solid black;
+}
+
+.text{
+	display: inline-block;
+	background-color: #c7f7a7;
+	width: 20%;
+}
+.border{
+	border: 10px solid rgb(69, 82, 51);
+}
+.border:hover {
+	border: 10px double rgba(69, 82, 51, 0.863);
+}
+.border_1{
+	border: 10px dashed rgb(60, 71, 42);
+}
+.border_1:hover {
+	border: 10px dotted rgb(60, 71, 42);
+}
+.border_2{
+	border: 10px dotted rgb(56, 68, 38);
+}
+.border_2:hover{
+	border: 10px dashed rgb(56, 68, 38);
+}
+
+.border_3{
+	border: 10px double rgb(42, 49, 31);
+}
+.border_3:hover{
+	border: 10px solid rgb(42, 49, 31);
+}
+
+/*----- border hover ---*/
+.hove:hover {
+	background: white;
+	color: blue;
+	box-shadow: 0px 0px 10px 5px white; 
+}
+
+.Pclass{
+	margin: 10px;
+}
+.one:hover{
+	border: 4px dotted black;
+	padding: 5px;
+	background: rgba(0, 0, 0, 0.198);
+
+}
+.two:hover {
+	border: 4px solid black;
+	padding: 5px;
+	background: rgba(0, 0, 0, 0.198);
+
+}
+.three:hover {
+	border: 4px double black;
+	padding: 5px;
+	background: rgba(0, 0, 0, 0.198);
+
+}
+.four:hover {
+	border: 4px dashed black;
+	padding: 5px;
+	background: rgba(0, 0, 0, 0.198);
+}
+/*          outline border           */
+.Pclass-one:hover {
+	outline: 5px dotted  black;
+	background: rgba(0, 0, 0, 0.198);
+
+}
+.Pclass-two:hover {
+	outline: 5px solid  black;
+	background: rgba(0, 0, 0, 0.198);
+
+}
+.Pclass-three:hover {
+	outline: transparent; 
+	background: rgba(0, 0, 0, 0.198);
+
+}
+.Pclass-four:hover {
+	outline: none;
+	background: rgba(0, 0, 0, 0.198);
+
+}
+
+/*     span hover     */
+.Pclass-one0{
+	margin: 50px 0;
+}
+.Pclass-one1 {
+	text-align: center;
+	line-height: 30px;
+	border: 5px solid  rgba(0, 0, 0, 0.226);
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.315);
+}
+.out-line{
+	outline: 5px solid  rgba(0, 0, 0, 0.459);
+	margin: 100px;
+}
+
+.radius-oll1{
+}
+.Row{
+	display: inline-block;
+	vertical-align: top;
+	background: rgb(24, 139, 155);
 	width: 200px;
 	height: 200px;
-	margin: 0px 0px 20px 0px;
-	padding: 15px;
 	border-radius: 50%;
-	box-shadow: 10px 10px 10px #000;
+	margin: 30px;
 }
-.inline {
-	background-color: #7a956b;
-	border: 5px solid #000;
+._radius-dashed{
+	outline: 5px dashed rgb(42, 130, 180) ;
+	overflow: auto;
+	padding: 30px;
+	text-align: center;
 }
-
-/*
-border
-Универсальное свойство border позволяет одновременно 
-установить толщину, 
-стиль и цвет границы вокруг элемента.
-border: 1px solid #000; (размер стиль цвет)
-Основные стили -solid dotted dashed double
-
-Синтаксис общего свойства:
-border: толщина_линии стиль_линии цвет_линии
-
-*/
-/*
-outline
-Универсальное свойство, одновременно устанавливающее цвет, 
-стиль и толщину внешней границы на всех четырех сторонах элемента. 
-В отличие от линии, задаваемой через border, свойство outline 
-не влияет на положение блока и его ширину. 
-Также нельзя задать параметры линии на отдельных сторонах элемента, 
-outline применяется сразу ко всем четырём сторонам.
-*/
-
-/*
-border-radius
-Устанавливает радиус скругления уголков блока.
-border-radius:50%; - кргуг
-Можно использовать вместе с overflow: hidden;
-*/
-
-/*
-box-shadow
-Добавляет тень к элементу.
-box-shadow: сдвиг_по_гориз сдвиг_по_верт радиус расстояние
-Флаг inset для установки внутренней тени
-Можно добавить много теней. На тень влияет свойство border-radius.
-filter: drop-shadow(0px 0px 10px #77608d);
-*/
-
-/*
-opacity
-Определяет уровень прозрачности элемента.
-Отличие opacity:0; от display:none; в том что блок 
-не убирается из верстки а только становиться прозрачным, 
-то есть занимаемое им место остается. Так же, 
-с прозрачными элементами все еще можно взаимодействовать, 
-например кликать по ссылкам.
-*/
-/*
-visibility
-Предназначен для отображения или скрытия элемента.
-Отличие visibility: hidden; от display:none; в том что блок 
-не убирается из верстки а только скрывается, 
-то есть занимаемое им место остается.
-Отличие visibility: hidden; от opacity:0;
- в том что блок скрывается и взаимодействовать с ним нельзя.
-*/
-/*
-.text-link {
-	color: green;
-	border-bottom: 2px dotted;
-	display: inline-block;
-}
-.text-link:hover {
-	color: red;
-}
-*/
-/*
-.link {
-	display: inline-block;
-	background-color: #794f45;
-	display: inline-block;
-	color: #fff;
-	padding: 15px;
-	border: 5px solid red;
-}
-.link:hover {
-	border: 5px solid transparent;
-}
-*/
-
-/* 
-.block {
-	padding: 20px;
-	margin: 0px 0px 30px 0px;
-}
-.block__title {
-	font-weight: 700;
-	font-size: 30px;
-	margin: 0px 0px 20px 0px;
-}
-.block__body {
-}
-*/
-/*
-vertical-align - выравнивает строчные 
-и блочно-строчные объекты по вертикали
-top - по верху
-middle - по центру
-bottom - по низу
-*/
-
-/*
-Схлопывание внешнего отступа происходит 
-только с блочными объектами
-*/
-/*
-.block__texts {
-	font-size: 0;
-}
-
-.block__items {
-	font-size: 0;
-}
-.block__item {
-	display: inline-block;
-	max-width: 200px;
-	max-height: 200px;
+._radius-solid{
+	outline: 5px solid rgb(170, 51, 194) ;
 	overflow: hidden;
-	padding: 15px;
-	background-color: #794f45;
-	color: #fff;
-	font-size: 20px;
+
+
+}
+._radius-dotted{
+	outline: 5px dotted rgb(17, 160, 88) ;
+	overflow: visible;
+
+}
+._radius-double{
+	outline: 5px double rgb(26, 90, 48) ;
+	text-align: center;
+	overflow: scroll;
+	padding: 30px;
+}
+
+.img-radius {
+	overflow: visible;
+	background: yellow;
+	border-top: 5px solid rgb(199, 173, 173) ;
+	border-right: 25px dotted rgb(124, 187, 53) ;
+	border-left: 35px double rgb(228, 25, 25) ;
+	border-bottom: 45px dashed rgb(71, 30, 184) ;
+}
+.img-radius2{
+	overflow: visible;
+	background: rgba(255, 255, 0, 0.842);
+	border-top: 15px solid yellow ;
+	border-right: 15px dotted rgb(124, 187, 53) ;
+	border-left: 15px double rgb(228, 25, 25) ;
+	border-bottom: 15px dashed rgb(71, 30, 184) ;
+	width: 200px;
+	height: 200px;
+	vertical-align: top;
+
+}
+.img-radis3{
+	width: 200px;
+	height: 200px;
+	border-radius: 0% 100% 100% 0% / 100% 50% 50% 0%   ; 
+	vertical-align: middle;
+}
+.img-radis4{
+	width: 200px;
+	height: 200px;
+	border-radius: 100% 0% 0% 100% / 50% 50% 50% 50% ; 
+	vertical-align: middle;
+}
+/*                      */
+.img-radis3:hover{
+	width: 200px;
+	height: 200px;
+	border-radius: 100% 0% 0% 100% / 50% 50% 50% 50% ; 
+	vertical-align: middle;
+}
+.img-radis4:hover{
+	width: 200px;
+	height: 200px;
+	border-radius: 0% 100% 100% 0% / 100% 50% 50% 0%   ; 
 	vertical-align: middle;
 }
 
-.span {
-	display: block;
+/*                             */
+.img-radis5{
+	width: 200px;
+	height: 200px;
+	border-top: 15px dashed yellow ;
+	border-right: 35px double rgb(124, 187, 53) ;
+	border-left: 35px double rgb(228, 25, 25) ;
+	border-bottom: 15px dashed rgb(71, 30, 184) ;
+	border-radius: 50%;
+	padding: 20px;
+	vertical-align: top;
 }
-.link {
-	margin: 0px 0px 20px 0px;
+/*              box shadow          */
+.box-head {
 	display: inline-block;
+	text-align: center;
 }
-.text {
+.img-sound {
+	box-shadow: 0px 0px 10px 0px,
+	0px 0px 20px 0px #CE394B,
+	0px 0px 30px 0px #0006FE,
+	0px 0px 40px 0px #FFC364,
+	0px 0px 50px 0px #F3AD5C;
+	background: #73AFAF;
+	padding: 20px;
+	border-radius: 10px 0px 0px 10px;
+}
+.img-sound2 {
+	box-shadow: 0px 0px 10px 0px,
+	inset 0px 0px 20px 0px #CE394B,
+	inset 0px 0px 30px 0px #0006FE,
+	0px 0px 40px 0px #FFC364,
+	 0px 0px 50px 0px #F3AD5C;
+	background: #73AFAF;
+	padding: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	border-radius: 0px 10px 10px 0px;
+
+}
+
+.item0 {
+	box-shadow: -5px -5px 0px 0px #E8ECF5, 
+	-15px -15px 0px 0px #B4B9CD, 
+	15px -25px 0px 0px #082FFC, 
+	30px -35px 0px 0px #F1B512, 
+	5px 10px 0px 0px #A436FC;
+	background: #73AFAF;
+	padding: 20px;
+	margin:20px;
+	border-radius: 10px 10px 10px 10px;
+
+}
+/*       Opasity         */
+.opa{
 	display: inline-block;
-	max-width: 100px;
-	background-color: #77608d;
-	padding: 10px;
-	font-size: 16px;
-	margin: 0px 30px 0px 0px;
-}
-
-.block__one,
-.block__two {
-	padding: 30px;
-	color: #fff;
-	font-size: 24px;
-}
-
-.block__one {
-	background-color: #794f45;
-}
-.block__two {
-	background-color: #7a956b;
-	margin: -50px 0px 0px 0px;
-}
-
-.big-text {
-	max-height: 200px;
-	background-color: #77608d;
-	padding: 30px;
-	display: block;
-	font-size: 30px;
-	color: #fff;
-	line-height: 120%;
+	padding: 20px;
+	vertical-align: middle;
+	background: #B4B9CD;
+	width: 100%;
+	text-align: center;
 	overflow: auto;
+	
 }
-*/
+.opa-sit0 {
+	width: 200px;
+	height: 200px;
+	background: brown;
+	opacity: 0;
+}
+.opa-sit0:hover {
+	width: 200px;
+	height: 200px;
+	background: brown;
+	opacity: 0.5;
+}
+
+
+.opa-sit1 {
+	width: 200px;
+	height: 200px;
+	background: brown;
+	opacity: 0.25;
+}
+.opa-sity2 {
+	width: 200px;
+	height: 200px;
+	background: brown;
+	opacity: 0.5;
+	text-align: right;
+}
+.opa-sity3 {
+	width: 200px;
+	height: 200px;
+	background: brown;
+	opacity: 0.75;
+	text-align: left;
+	line-height: 150%;
+
+}
+.opa-sity4 {
+	width: 200px;
+	height: 200px;
+	background: brown;
+	opacity: 1;
+	white-space: nowrap;
+}
+/*         visibility             */
+.block-head {
+	background: rgba(70, 142, 184, 0.486);
+	text-align: center;
+}
+.bodytop {
+	font-size: 25px;
+	color: brown;
+
+}
+.body1{
+	display: inline-block;
+	padding: 5px 100px;
+	text-align: center;
+}
+.block1 {
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	background: rgba(70, 142, 184, 0.486);
+	padding: 20px 20px;
+	margin-bottom: 20px;
+	text-align: justify;
+	visibility: hidden;
+}
+.block2 {
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	background: rgba(70, 142, 184, 0.486);
+	padding: 20px 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	opacity: 0;
+}
+.block3 {
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	background: rgba(70, 142, 184, 0.486);
+	padding: 20px 20px;
+	margin-bottom: 20px;
+	text-align: right;
+	display: none;
+}
+/*      block:hover         */
+.block1:hover {
+	/*  Hover не працює */
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	background: rgba(70, 142, 184, 0.486);
+	/* padding: 20px 20px;
+	margin-bottom: 20px; */
+	text-align: justify;
+
+}
+.block2:hover {
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	background: rgba(70, 142, 184, 0.486);
+	padding: 20px 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	opacity: 1;
+}
+.block3:hover {
+		/*  Hover на display:none теж не працює */
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	background: rgba(70, 142, 184, 0.486);
+	padding: 20px 20px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+/*      Додаткове завдання   */
+/*          footer           */
+.footer{
+	background: rgba(77, 149, 182, 0.459);
+}
+.Zero{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: rgb(27, 122, 200);
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 75px;
+}
+.block-dop{
+	text-indent: 30px;
+	padding: 10px;
+	border: 2px solid brown;
+	width: 95%;
+	margin: 0 auto;
+	background: rgba(27, 122, 200, 0.514);
+	opacity: 0.5;
+	margin-bottom: 20px;
+}
+.span-border{
+	display: inline-block;
+	outline: 3px solid #289fed;
+	width: 95%;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+.border-different {
+	outline: 3px solid #289fed;
+	text-indent: 30px;
+	width: 95%;
+	margin: 0 auto;
+	padding: 10px;
+	color: rgb(75, 83, 195);
+	border-top: 5px dashed rgba(182, 182, 56, 0.644) ;
+	border-right: 5px double rgb(124, 187, 53) ;
+	border-left: 5px double rgb(228, 25, 25) ;
+	border-bottom: 5px dashed rgb(71, 30, 184) ;
+	margin-bottom: 20px;
+}
+.link-dop{
+	padding: 30px 0;
+	text-align: center;
+}
+.dop_text{
+	display: inline-block;
+	text-align:center;
+	font-size: 30px;
+	text-transform: capitalize;
+	padding: 5px;
+	box-shadow: inset 0px 0px 15px 5px;
+	color: rgb(255, 255, 255);
+	background: rgba(27, 122, 200, 0.514);
+	border-radius: 5px;
+
+}
+.dop_text:hover{
+	display: inline-block;
+	text-align:center;
+	font-size: 30px;
+	text-transform: capitalize;
+	color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 15px 5px;
+	border: 1px solid ;
+	padding: 5px;
+	border-radius: 5px;
+}
+
